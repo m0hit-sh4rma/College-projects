@@ -7,9 +7,9 @@ int main(){
 	printf("Enter a number: ");
 	scanf("%d", &a);
 	
-	int org_num = a;
+	int org_num = a; //it's used in end during condition of armstrong number.
 	
-	int x = a;
+	int x = a; // it's used during countind of digits in a number.
 	int y;
 	int digits=0;
 	while(x>0){
@@ -18,7 +18,7 @@ int main(){
 		x = x/10;
 		digits++;
 	}
-	printf("%d\n", digits);
+	//printf("%d\n", digits);
 	
 	while(a>0){
 		b = a%10;
@@ -51,14 +51,14 @@ int main(){
 		f = f*10+b;
 		break;
 	}
-	printf("%d %d %d %d \n", c,d,e,f);
+	//printf("%d %d %d %d \n", c,d,e,f);
 	
 	int i = pow(c, digits);
 	int j = pow(d, digits);
 	int k = pow(e, digits);
 	int l = pow(f, digits);
 	
-	printf("%d %d %d %d \n", i,j,k,l);
+	//printf("%d %d %d %d \n", i,j,k,l);
 	
 	if(i+j+k+l == org_num){
 		printf("The given number is an armstrong number.");
